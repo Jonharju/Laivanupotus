@@ -6,11 +6,11 @@ osiin on osuttu, tulee siit‰ ilmoitus. Ensimm‰isen‰ kaikki vastustajan laivat tu
 **K‰ytt‰j‰t:** Pelaaja ja Peli
 
 **Pelaajan toiminnot:** 
-*Aseta laivat 
-*Ammu ruutuun 
+-Aseta laivat 
+-Ammu ruutuun 
 
 **Pelin toiminnot:**
-*N‰yt‰ pelilauta 
-*N‰yt‰ ilmoita uponneesta laivasta 
-*Ilmoita pelin p‰‰ttymisest‰ 
+-N‰yt‰ pelilauta 
+-N‰yt‰ ilmoita uponneesta laivasta 
+-Ilmoita pelin p‰‰ttymisest‰ 
 
