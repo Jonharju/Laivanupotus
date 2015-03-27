@@ -12,7 +12,7 @@ public class Laiva {
         this.osumat = new boolean[koko];
         tyhjaaOsumat();
     }
-    
+//    kirjain merkkaa laitetaanko laiva vaakaan vai pystyyn
     public void asetaLaiva(int x, int y, char s){
         if(s == 'v') {
             for(int i = 0; i < koko; i++) {

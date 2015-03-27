@@ -51,7 +51,13 @@ public class LaivaTest {
         assertEquals(true, laiva.osuiko(1, 3));
         assertEquals(true, laiva.uponnut());
     }
-    
+     @Test
+    public void osuuUseammankerran(){
+        Laiva laiva = new Laiva(3);
+        laiva.asetaLaiva(1, 1, 'v');
+        assertEquals(true, laiva.osuiko(1, 1));
+        assertEquals(true, laiva.osuiko(1, 2));
+    }
     @Test
     public void eiUppoaLiianVahasta(){
         Laiva laiva = new Laiva(3);
