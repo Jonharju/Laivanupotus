@@ -36,4 +36,10 @@ public class LaivastoTest {
         assertEquals(6, l.laivat.size());
     }
     
+    @Test
+    public void luodutLaivatJaljella(){
+        Laivasto l = new Laivasto();
+        assertEquals(false, l.onkoKaikkiUponnut());
+    }
+    
 }
