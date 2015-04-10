@@ -42,4 +42,26 @@ public class LaivastoTest {
         assertEquals(false, l.onkoKaikkiUponnut());
     }
     
+    @Test
+    public void upottaaLaivat(){
+        Laivasto l = new Laivasto();
+        for(Laiva laiva: l.laivat){
+            for(int i = 0; i<laiva.koko; i++){
+                laiva.osu();
+            }
+        }
+        assertEquals(true, l.onkoKaikkiUponnut());
+    }
+    
+    @Test
+    public void osuuLaivoihin(){
+        Laivasto l = new Laivasto();
+        int i = 1;
+        for(Laiva laiva: l.laivat){
+            laiva.asetaLaiva(i, i, 1);
+            i++;
+        }
+        assertEquals(true, l.onkoJoLaiva(1, 1));
+        assertEquals(true, l.onkoJoLaiva(2, 2));
+    }
 }

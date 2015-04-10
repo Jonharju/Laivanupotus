@@ -5,13 +5,13 @@ public class Pelikentta {
     private int [][] pelikentta;
 
     public Pelikentta() {
-        this.pelikentta = new int[10][10];
+        this.pelikentta = new int[11][11];
         alustaKentta();
     }
     
     public void alustaKentta(){
-        for(int rivi=0 ; rivi < 10 ; rivi++ )
-            for(int sarake=0 ; sarake < 10 ; sarake++ )
+        for(int rivi=1 ; rivi <= 10 ; rivi++ )
+            for(int sarake=1 ; sarake <= 10 ; sarake++ )
                 pelikentta[rivi][sarake]=-1;
     }
     
@@ -21,6 +21,10 @@ public class Pelikentta {
     
     public void muutaOhi(int x, int y) {
         pelikentta[x][y]=0;
+    }
+    
+    public void muutaLaivaksi(int x, int y){
+        pelikentta[x][y]=2;
     }
     
     public void muutaOsui(int x, int y){

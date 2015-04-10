@@ -38,9 +38,9 @@ public class Peli {
     
     public boolean loppuikoPeli(){
         if(!laivat1.onkoKaikkiUponnut() || !laivat2.onkoKaikkiUponnut()){
-            return true;
-        } else {
             return false;
+        } else {
+            return true;
         }
     }
     

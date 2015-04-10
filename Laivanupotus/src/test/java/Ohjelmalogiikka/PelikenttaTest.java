@@ -31,8 +31,8 @@ public class PelikenttaTest {
     @Test
     public void luoKentanOikein(){
         Pelikentta kentta = new Pelikentta();
-        for(int i = 0; i<10; i++){
-            for(int j = 0; j < 10; j++) {
+        for(int i = 1; i<=10; i++){
+            for(int j = 1; j <= 10; j++) {
                 assertEquals(-1, kentta.tarkista(i, j));
             }
         }
@@ -53,10 +53,17 @@ public class PelikenttaTest {
     }
     
     @Test
+    public void muuttaaLaivaksi(){
+        Pelikentta kentta = new Pelikentta();
+        kentta.muutaLaivaksi(1, 1);
+        assertEquals(2, kentta.tarkista(1, 1));
+    }
+    
+    @Test
     public void alustaaKentanOikein(){
         Pelikentta kentta = new Pelikentta();
-        for(int i = 0; i<10; i++){
-            for(int j = 0; j < 10; j++) {
+        for(int i = 1; i<=10; i++){
+            for(int j = 1; j <= 10; j++) {
                 assertEquals(-1, kentta.tarkista(i, j));
             }
         }

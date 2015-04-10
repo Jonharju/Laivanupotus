@@ -6,3 +6,5 @@
 | 20.3.2015 | 7h | Luokkien toteutus, dokumenttien luominen ja testien ongelmien ratkaisu |
 | 25.3.2015 | 2h | Pit testin toimintaan saanti |
 | 27.3.2015 | 4h | Uusien luokkien ja testien luonti |
+| 04.4.2015 | 2h | Paramman toteutuksen suunnittelu |
+| 10.4.2015 | 6h | Toteutuksen muutos, lievän siitä johtuneen ongelman korjaus |

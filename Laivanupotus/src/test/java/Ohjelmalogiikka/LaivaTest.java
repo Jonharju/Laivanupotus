@@ -38,14 +38,14 @@ public class LaivaTest {
     @Test
     public void osuuLaivaan(){
         Laiva laiva = new Laiva(3);
-        laiva.asetaLaiva(1, 1, 'v');
+        laiva.sopiikoLaiva(1, 1, 1);
         assertEquals(true, laiva.osuiko(1, 1));
     }
     
     @Test
     public void uppoaa(){
         Laiva laiva = new Laiva(3);
-        laiva.asetaLaiva(1, 1, 'v');
+        laiva.sopiikoLaiva(1, 1, 1);
         assertEquals(true, laiva.osuiko(1, 1));
         assertEquals(true, laiva.osuiko(1, 2));
         assertEquals(true, laiva.osuiko(1, 3));
@@ -54,14 +54,14 @@ public class LaivaTest {
      @Test
     public void osuuUseammankerran(){
         Laiva laiva = new Laiva(3);
-        laiva.asetaLaiva(1, 1, 'v');
+        laiva.sopiikoLaiva(1, 1, 1);
         assertEquals(true, laiva.osuiko(1, 1));
         assertEquals(true, laiva.osuiko(1, 2));
     }
     @Test
     public void eiUppoaLiianVahasta(){
         Laiva laiva = new Laiva(3);
-        laiva.asetaLaiva(1, 1, 'v');
+        laiva.sopiikoLaiva(1, 1, 1);
         assertEquals(true, laiva.osuiko(1, 1));
         assertEquals(true, laiva.osuiko(1, 2));
         assertEquals(false, laiva.uponnut());
@@ -70,19 +70,49 @@ public class LaivaTest {
     @Test
     public void ohiEiOsu(){
         Laiva laiva = new Laiva(3);
-        laiva.asetaLaiva(1, 1, 'v');
+        laiva.sopiikoLaiva(1, 1, 1);
         assertEquals(false, laiva.osuiko(2, 1));
     }
     
     @Test
-    public void tyhjaaOsumat(){
+    public void mahtuukoLaivaEi(){
         Laiva laiva = new Laiva(3);
-        laiva.asetaLaiva(1, 1, 'v');
+        assertEquals(false, laiva.sopiikoLaiva(9, 9,1));
+    }
+    
+    @Test
+    public void mahtuukoLaivaKylla(){
+        Laiva laiva = new Laiva(3);
+        assertEquals(true, laiva.sopiikoLaiva(8, 8,1));
+    }
+    
+    @Test
+    public void eiOsuLiikaa(){
+        Laiva laiva = new Laiva(3);
+        laiva.sopiikoLaiva(1, 1, 1);
         assertEquals(true, laiva.osuiko(1, 1));
         assertEquals(true, laiva.osuiko(1, 2));
         assertEquals(true, laiva.osuiko(1, 3));
         assertEquals(true, laiva.uponnut());
-        laiva.tyhjaaOsumat();
-        assertEquals(false, laiva.uponnut());
+        laiva.osu();
+        assertEquals(3, laiva.osumia);
+    }
+    
+    @Test
+    public void onkoLaivaPaikallaan(){
+        Laiva laiva = new Laiva(3);
+        laiva.sopiikoLaiva(1, 1, 1);
+        assertEquals(true, laiva.onkoLaivaTassa(1, 1));
+        assertEquals(true, laiva.onkoLaivaTassa(1, 2));
+        assertEquals(true, laiva.onkoLaivaTassa(1, 3));
+    }
+    
+    @Test
+    public void eiOleLaivaPaikallaan(){
+        Laiva laiva = new Laiva(3);
+        laiva.sopiikoLaiva(1, 1, 1);
+        assertEquals(false, laiva.onkoLaivaTassa(1, 4));
+        assertEquals(false, laiva.onkoLaivaTassa(2, 1));
+        assertEquals(false, laiva.onkoLaivaTassa(3, 3));
     }
 }

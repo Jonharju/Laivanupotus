@@ -16,20 +16,30 @@ public class Laivasto {
         laivat.add(new Laiva(1));
     }
     
-    public boolean onkoKaikkiUponnut(){
-        boolean uponneet = true;
+    public boolean onkoJoLaiva(int x, int y){
         for(Laiva l : laivat){
-            uponneet = l.uponnut();
-        }
-        return uponneet;
-    }
-    public boolean osuiko(int x, int y){
-        boolean osui = false;
-        for(Laiva l : laivat){
-            if(l.osuiko(x, y)){
-                osui = true;
+            if(l.onkoLaivaTassa(x, y)){
+                return true;
             }
         }
-        return osui;
+        return false;
+    }
+    
+    public boolean onkoKaikkiUponnut(){
+        for(Laiva l : laivat){
+            if(!l.uponnut()){
+                return false;
+            }
+        }
+        return true;
+    }
+    
+    public boolean osuiko(int x, int y){
+        for(Laiva l : laivat){
+            if(l.osuiko(x, y)){
+                return true;
+            }
+        }
+        return false;
     }
 }
