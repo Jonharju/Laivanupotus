@@ -3,9 +3,20 @@ package Ohjelmalogiikka;
 
 import java.util.ArrayList;
 
+/**
+ *
+ * @author Jonas
+ */
 public class Laivasto {
-    ArrayList<Laiva> laivat;
 
+    /**
+     *
+     */
+    public ArrayList<Laiva> laivat;
+
+    /**
+     *
+     */
     public Laivasto() {
         this.laivat = new ArrayList<Laiva>();
         laivat.add(new Laiva(5));
@@ -16,6 +27,14 @@ public class Laivasto {
         laivat.add(new Laiva(1));
     }
     
+    /**
+     * Käydään laiva kerrallaan läpi onko ruudussa laiva
+     * 
+     * @param x käyttäjän antama syöte
+     * @param y käyttäjän antama syöte
+     * 
+     * @return onko laivaston laiva tässä ruudussa
+     */
     public boolean onkoJoLaiva(int x, int y){
         for(Laiva l : laivat){
             if(l.onkoLaivaTassa(x, y)){
@@ -25,6 +44,11 @@ public class Laivasto {
         return false;
     }
     
+    /**
+     * Tarkistaa yksitellen ovatko kaikki laivat uponneet ja palauttaa tuloksen
+     * 
+     * @return ovatko kaikki laivat uponneet
+     */
     public boolean onkoKaikkiUponnut(){
         for(Laiva l : laivat){
             if(!l.uponnut()){
@@ -34,6 +58,14 @@ public class Laivasto {
         return true;
     }
     
+    /**
+     * Tarkistaa laiva kerrallaan osuiko näihin koordinaatteihin ammuttu johonkin laivoista
+     * 
+     * @param x käyttäjän antama syöte
+     * @param y käyttäjän antama syöte
+     * 
+     * @return osuiko johonkin laivoista
+     */
     public boolean osuiko(int x, int y){
         for(Laiva l : laivat){
             if(l.osuiko(x, y)){

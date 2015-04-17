@@ -1,6 +1,10 @@
 
 package Ohjelmalogiikka;
 
+/**
+ *
+ * @author Jonas
+ */
 public class Laiva {
     int x;
     int y;
@@ -8,6 +12,11 @@ public class Laiva {
     int koko;
     int osumia;
 
+    /**
+     * Alustetaan muuttujat, -1 jos ei vielä laitettu, kooksi koko ja osumia 0
+     * 
+     * @param koko laivalle annettu koko
+     */
     public Laiva(int koko) {
         this.x = -1;
         this.y = -1;
@@ -15,14 +24,32 @@ public class Laiva {
         this.koko = koko;
         this.osumia = 0;
     }
-//    0 merkkaa pystyyn, 1 vaakaan
-    public void asetaLaiva(int x, int y, int suunta){
+
+
+    /**
+     * Asetetaan annettujen mukaan, 0 pystyyn ja 1 vaakaan
+     * 
+     * @param x käyttäjän antama syöte
+     * @param y käyttäjän antama syöte
+     * @param suunta käyttäjän antama syöte
+     */
+        public void asetaLaiva(int x, int y, int suunta){
         this.x = x;
         this.y = y;
         this.suunta = suunta;
     }
-//    tarkistetaan onko lähtöruutu ulkopuolella, sitten mahtuuko kentälle
-    public boolean sopiikoLaiva(int x, int y, int suunta){
+
+
+    /**
+     * Tarkistetaan onko paikka laivalle sopiva, palautetaan true jos on ja false jos ei
+     * 
+     * @param x käyttäjän antama syöte
+     * @param y käyttäjän antama syöte
+     * @param suunta käyttäjän antama syöte
+     * 
+     * @return mahtuuko laiva
+     */
+        public boolean sopiikoLaiva(int x, int y, int suunta){
         if(x > 10 || y > 10){
             return false;
         }
@@ -39,11 +66,25 @@ public class Laiva {
         }
         return false;
     }
+
+    /**
+     * Lisää laivalle osuman
+     */
     public void osu(){
         if(this.osumia < this.koko){
             this.osumia++;
         }
     }
+
+    /**
+     * Tarkistaa osuiko laukaus, eli onko laiva annetuissa koordinaateissa ja jos osui, nii lisätään laivalle osuma.
+     * Sitten palautetaan käyttäjälle osuiko vai eikö
+     * 
+     * @param x käyttäjän antama syöte
+     * @param y käyttäjän antama syöte
+     * 
+     * @return osuiko laivaan
+     */
     public boolean osuiko(int x, int y) {
         if(onkoLaivaTassa(x, y)){
             osu();
@@ -52,6 +93,14 @@ public class Laiva {
         return false;
     }
     
+    /**
+     * Tarkistaa käyttäjän antamien koordinaattien perusteella onko laiva kyseisessä paikassa
+     * 
+     * @param x käyttäjän antama syöte
+     * @param y käyttäjän antama syöte
+     * 
+     * @return onko laiva tässä paikassa
+     */
     public boolean onkoLaivaTassa(int x, int y){
         if(this.suunta == 0) {
             if(this.y == y){
@@ -73,6 +122,11 @@ public class Laiva {
         return false;
     }
     
+    /**
+     * Palauttaa onko laiva uponnut vai eikö
+     * 
+     * @return onko laiva uponnut
+     */
     public boolean uponnut(){
        return this.osumia == this.koko;
     }
