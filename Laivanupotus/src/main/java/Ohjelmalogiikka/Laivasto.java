@@ -74,4 +74,13 @@ public class Laivasto {
         }
         return false;
     }
+    
+    public boolean onkoKaikkiAsetettu(){
+        for(Laiva l : laivat){
+            if(!l.onkoAsetettu()){
+                return false;
+            }
+        }
+        return true;
+    }
 }

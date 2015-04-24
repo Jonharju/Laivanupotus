@@ -11,3 +11,4 @@
 | 13.4.2015 | 2h | Pelin testausta ja suunnittelua |
 | 14.4.2015 | 1h | Graafisen käyttöliittymän alustava ideointi |
 | 17.4.2015 | 6h | Graafisen käyttöliittymän aloittaminen ja luokkien muokkaaminen |
+| 24.4.2015 | 5h | Graafisen käyttöliittymän jatkokehitys |

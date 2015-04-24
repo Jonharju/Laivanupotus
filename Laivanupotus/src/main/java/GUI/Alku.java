@@ -11,6 +11,7 @@ import javax.swing.JTextField;
 
 public class Alku extends JPanel implements ActionListener {
     private Peli p;
+    private Asetus a;
     private String nimi1;
     private String nimi2;
     private boolean eka;
@@ -21,9 +22,10 @@ public class Alku extends JPanel implements ActionListener {
     private JTextField nimiRuutu2;
     
     
-    public Alku(Peli p) {
+    public Alku(Peli p, Asetus a) {
         super(new GridLayout(3, 2));
         this.p = p;
+        this.a = a;
         this.eka = false;
         this.toka = false;
         this.aseta1 = new JButton("Pelaaja 1 valmis!");
@@ -66,8 +68,8 @@ public class Alku extends JPanel implements ActionListener {
         
         if(eka&&toka){
             this.setVisible(false);
-//            Asetus.setVisible(true);
-//            Asetus.repaint();
+            a.setVisible(true);
+            a.repaint();
         }
     }
 }

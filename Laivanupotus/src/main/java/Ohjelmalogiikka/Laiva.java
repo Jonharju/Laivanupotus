@@ -11,6 +11,7 @@ public class Laiva {
     int suunta;
     int koko;
     int osumia;
+    boolean asetettu;
 
     /**
      * Alustetaan muuttujat, -1 jos ei vielä laitettu, kooksi koko ja osumia 0
@@ -23,6 +24,7 @@ public class Laiva {
         this.suunta = -1;
         this.koko = koko;
         this.osumia = 0;
+        this.asetettu = false;
     }
 
 
@@ -37,6 +39,11 @@ public class Laiva {
         this.x = x;
         this.y = y;
         this.suunta = suunta;
+        this.asetettu = true;
+    }
+        
+    public boolean onkoAsetettu(){
+        return this.asetettu;
     }
 
 

@@ -13,10 +13,12 @@ public class GraafinenKayttoLiittyma implements Runnable{
     private JFrame frame;
     private Peli p;
     private Alku aloitus;
+    private Asetus asetus;
 
     public GraafinenKayttoLiittyma(Peli p) {
         this.p = p;
-        this.aloitus = new Alku(p);
+        this.asetus = new Asetus(p);
+        this.aloitus = new Alku(p, asetus);
                 
     }
     @Override
@@ -32,6 +34,12 @@ public class GraafinenKayttoLiittyma implements Runnable{
     private void luoKomponentit(Container container) {
         container.setLayout(new BoxLayout(container, BoxLayout.X_AXIS));
         container.add(aloitus);
+        asetus.setVisible(false);
+        container.add(asetus);
+    }
+    
+    public JFrame getFrame() {
+        return frame;
     }
    
 }
