@@ -57,17 +57,15 @@ public class Laiva {
      * @return mahtuuko laiva
      */
         public boolean sopiikoLaiva(int x, int y, int suunta){
-        if(x > 10 || y > 10){
+        if(x > 9 || y > 9){
             return false;
         }
         if(suunta == 0){
-            if(x+koko-1 <= 10){
-                asetaLaiva(x,y,suunta);
+            if(y+koko-1 <= 9){
                 return true;
             }
         } else if(suunta == 1) {
-            if(y+koko-1 <= 10){
-                asetaLaiva(x,y,suunta);
+            if(x+koko-1 <= 9){
                 return true;
             }
         }
@@ -95,6 +93,10 @@ public class Laiva {
     public boolean osuiko(int x, int y) {
         if(onkoLaivaTassa(x, y)){
             osu();
+            System.out.println("Osuit laivaan");
+            if(uponnut()){
+                System.out.println("Upotit laivan!");
+            }
             return true;
         }
         return false;
@@ -109,19 +111,21 @@ public class Laiva {
      * @return onko laiva tässä paikassa
      */
     public boolean onkoLaivaTassa(int x, int y){
-        if(this.suunta == 0) {
-            if(this.y == y){
-                for(int i = 0; i < this.koko;i++){
-                    if(x == this.x + i){
-                        return true; 
+        if(onkoAsetettu()){
+            if(this.suunta == 0) {
+                if(this.x == x){
+                    for(int i = 0; i < this.koko;i++){
+                        if(y == this.y + i){
+                            return true; 
+                        }
                     }
-                }
-            } 
-        } else if(this.suunta == 1){
-            if(this.x == x){
-                for(int i = 0; i < this.koko;i++){
-                    if(y == this.y + i){
-                        return true; 
+                } 
+            } else if(this.suunta == 1){
+                if(this.y == y){
+                    for(int i = 0; i < this.koko;i++){
+                        if(x == this.x + i){
+                            return true; 
+                        }
                     }
                 }
             }
@@ -136,6 +140,10 @@ public class Laiva {
      */
     public boolean uponnut(){
        return this.osumia == this.koko;
+    }
+
+    public int getKoko() {
+        return koko;
     }
     
 }

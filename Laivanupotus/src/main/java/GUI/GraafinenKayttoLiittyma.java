@@ -14,10 +14,12 @@ public class GraafinenKayttoLiittyma implements Runnable{
     private Peli p;
     private Alku aloitus;
     private Asetus asetus;
+    private Ampuminen ampuminen;
 
     public GraafinenKayttoLiittyma(Peli p) {
         this.p = p;
-        this.asetus = new Asetus(p);
+        this.ampuminen = new Ampuminen(p);
+        this.asetus = new Asetus(p, ampuminen);
         this.aloitus = new Alku(p, asetus);
                 
     }
@@ -36,6 +38,8 @@ public class GraafinenKayttoLiittyma implements Runnable{
         container.add(aloitus);
         asetus.setVisible(false);
         container.add(asetus);
+        ampuminen.setVisible(false);
+        container.add(ampuminen);
     }
     
     public JFrame getFrame() {

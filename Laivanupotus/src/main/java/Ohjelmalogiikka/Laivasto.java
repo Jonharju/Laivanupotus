@@ -2,6 +2,7 @@
 package Ohjelmalogiikka;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -12,13 +13,13 @@ public class Laivasto {
     /**
      *
      */
-    public ArrayList<Laiva> laivat;
+    public List<Laiva> laivat;
 
     /**
      *
      */
     public Laivasto() {
-        this.laivat = new ArrayList<Laiva>();
+        this.laivat = new ArrayList<Laiva>() {};
         laivat.add(new Laiva(5));
         laivat.add(new Laiva(4));
         laivat.add(new Laiva(3));
@@ -35,10 +36,19 @@ public class Laivasto {
      * 
      * @return onko laivaston laiva tässä ruudussa
      */
-    public boolean onkoJoLaiva(int x, int y){
-        for(Laiva l : laivat){
-            if(l.onkoLaivaTassa(x, y)){
-                return true;
+    public boolean onkoJoLaiva(int x, int y, int koko, int suunta){
+        for(int i = 0; i < koko; i++){
+            for(Laiva l : laivat){
+                if(suunta == 0){
+                    if(l.onkoLaivaTassa(x, y+i)){
+                        return true;
+                    }
+                } else if(suunta == 1) {
+                    if(l.onkoLaivaTassa(x+i, y)){
+                        return true;
+                    }
+                }
+                
             }
         }
         return false;

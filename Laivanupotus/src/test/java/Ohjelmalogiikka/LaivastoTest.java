@@ -61,7 +61,7 @@ public class LaivastoTest {
             laiva.asetaLaiva(i, i, 1);
             i++;
         }
-        assertEquals(true, l.onkoJoLaiva(1, 1));
-        assertEquals(true, l.onkoJoLaiva(2, 2));
+        assertEquals(true, l.onkoJoLaiva(1, 1,1,1));
+        assertEquals(true, l.onkoJoLaiva(2, 2,1,1));
     }
 }

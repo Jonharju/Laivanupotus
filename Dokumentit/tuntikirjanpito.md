@@ -12,3 +12,6 @@
 | 14.4.2015 | 1h | Graafisen käyttöliittymän alustava ideointi |
 | 17.4.2015 | 6h | Graafisen käyttöliittymän aloittaminen ja luokkien muokkaaminen |
 | 24.4.2015 | 5h | Graafisen käyttöliittymän jatkokehitys |
+| 25.4.2015 | 4h | Graafisen jatkokehittelyä |
+| 26.4.2015 | 3h | Graafisen jatkoa ja luokkien muuntelua toiminnan mukaisiksi |
+| 27.4.2015 | 12h | Graafisen käyttöliittymän kehitys, bugien korjaus ja toiminallisuuden toteutus vihdoin lähellä haluttua |

@@ -31,8 +31,8 @@ public class PelikenttaTest {
     @Test
     public void luoKentanOikein(){
         Pelikentta kentta = new Pelikentta();
-        for(int i = 1; i<=10; i++){
-            for(int j = 1; j <= 10; j++) {
+        for(int i = 0; i<=9; i++){
+            for(int j = 0; j <= 9; j++) {
                 assertEquals(-1, kentta.tarkista(i, j));
             }
         }
@@ -62,8 +62,8 @@ public class PelikenttaTest {
     @Test
     public void alustaaKentanOikein(){
         Pelikentta kentta = new Pelikentta();
-        for(int i = 1; i<=10; i++){
-            for(int j = 1; j <= 10; j++) {
+        for(int i = 0; i<=9; i++){
+            for(int j = 0; j <= 9; j++) {
                 assertEquals(-1, kentta.tarkista(i, j));
             }
         }
@@ -74,5 +74,15 @@ public class PelikenttaTest {
         kentta.alustaKentta();
         assertEquals(-1, kentta.tarkista(1, 1));
         assertEquals(-1, kentta.tarkista(2, 2));
+    }
+    @Test
+    public void alustaaLaivanOikein(){
+        Pelikentta kentta = new Pelikentta();
+        Laiva l = new Laiva(3);
+        l.asetaLaiva(1, 1, 1);
+        kentta.asetaLaiva(l);
+        assertEquals(2, kentta.tarkista(1, 1));
+        assertEquals(2, kentta.tarkista(2, 1));
+        assertEquals(2, kentta.tarkista(3, 1));
     }
 }

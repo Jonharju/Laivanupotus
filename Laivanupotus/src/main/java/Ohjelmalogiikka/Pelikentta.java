@@ -12,7 +12,7 @@ public class Pelikentta {
      * Luodaan tyhjä kenttä ja alustetaan se
      */
     public Pelikentta() {
-        this.pelikentta = new int[11][11];
+        this.pelikentta = new int[10][10];
         alustaKentta();
     }
     
@@ -20,8 +20,8 @@ public class Pelikentta {
      * Asetetaan jokainen kentän ruutu ampumattomaksi
      */
     public void alustaKentta(){
-        for(int rivi=1 ; rivi <= 10 ; rivi++ )
-            for(int sarake=1 ; sarake <= 10 ; sarake++ )
+        for(int rivi=0 ; rivi <= 9 ; rivi++ )
+            for(int sarake=0 ; sarake <= 9 ; sarake++ )
                 pelikentta[rivi][sarake]=-1;
     }
     
@@ -67,4 +67,16 @@ public class Pelikentta {
         pelikentta[x][y]=1;
     }
     
+    public void asetaLaiva(Laiva l){
+        if(l.suunta == 0) {
+            for(int i = 0; i < l.koko;i++){
+                muutaLaivaksi(l.x, l.y +i);   
+            }
+        } else if(l.suunta == 1){
+            for(int i = 0; i < l.koko; i++){
+                muutaLaivaksi(l.x +i, l.y);
+            }
+        }
+    }
 }
+

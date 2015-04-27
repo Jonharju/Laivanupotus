@@ -16,6 +16,7 @@ import javax.swing.JTextArea;
 
 public class Asetus extends JPanel{
     private Peli p;
+    private Ampuminen a;
     private Laivasto eka;
     private Laivasto toka;
     private Pelikentta ekan;
@@ -27,8 +28,9 @@ public class Asetus extends JPanel{
     private AsetusRuudukko ekanRuudukko;
     private AsetusRuudukko tokanRuudukko;
 //    
-    public  Asetus(Peli p){
+    public  Asetus(Peli p, Ampuminen a){
         super(new BorderLayout());
+        this.a = a;
         this.p = p;
         this.eka = p.laivat1;
         this.toka = p.laivat2;
@@ -73,7 +75,7 @@ public class Asetus extends JPanel{
         korttiPaneeli.add(tokanKortti, "Toka");
         return korttiPaneeli;
     }
-    
+ 
     public class valmisNapinKuuntelija implements ActionListener {
 
         JPanel tama;
@@ -88,12 +90,10 @@ public class Asetus extends JPanel{
            
             if (eka.onkoKaikkiAsetettu()&& toka.onkoKaikkiAsetettu()) {
                 tama.setVisible(false); 
-//                peli.paivitaTilanne();
-//                peli.setVisible(true);
+                a.setVisible(true);
             } else if (eka.onkoKaikkiAsetettu()) {
                 kortit.next(korttiPaneeli);
             }
-
         }
 
     }
