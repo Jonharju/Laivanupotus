@@ -20,10 +20,12 @@ public class AsetusRuudukko extends JPanel{
     private Laivasto l;
     private Pelikentta p;
     private int laitettuja;
+    private Selostaja s;
 
-    public AsetusRuudukko(Laivasto l, Pelikentta p) {
+    public AsetusRuudukko(Laivasto l, Pelikentta p, Selostaja s) {
         this.l = l;
         this.p = p;
+        this.s = s;
         this.laitettuja = 0;
         this.setLayout(new GridLayout(koko, koko));
         luoPainikkeet();
@@ -66,12 +68,15 @@ public class AsetusRuudukko extends JPanel{
                     nyt.asetaLaiva(x, y, vaaka);
                     p.asetaLaiva(nyt);
                     laitettuja++;
+                    s.asetettu();
                     return "Laiva asetettu";
                 } 
             } else {
+                s.eiVoiAsettaa();
                 return "Laivaa ei voi asettaa tähän";
             } 
         }
+        s.kaikkiAsetettu();
         return "Olet jo asettanut kaikki laivat";
     }
     

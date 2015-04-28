@@ -22,12 +22,14 @@ public class AmpumisRuudukko extends JPanel{
     private Pelikentta p;
     private Peli peli;
     private int pelaaja;
+    private Selostaja s;
 
-    public AmpumisRuudukko(Peli peli, Laivasto l, Pelikentta p, int pelaaja) {
+    public AmpumisRuudukko(Peli peli, Laivasto l, Pelikentta p, int pelaaja, Selostaja s) {
         this.peli = peli;
         this.l = l;
         this.p = p;
         this.pelaaja = pelaaja;
+        this.s = s;
         this.setLayout(new GridLayout(koko, koko));
         luoPainikkeet();
     }
@@ -72,20 +74,25 @@ public class AmpumisRuudukko extends JPanel{
                     if(l.osuiko(nappi.getX(), nappi.getY())){
                         p.muutaOsui(nappi.getX(), nappi.getY());
                         nappi.setBackground(Color.RED);
+                        s.osuma();
                         if(l.onkoKaikkiUponnut()){
                             System.out.println("voitit pelin!");
+                            s.voitit();
                         }
                     }  
                 } else if(p.tarkista(nappi.getX(), nappi.getY()) == -1){
                     System.out.println("Ammuit huti");
+                    s.ohi();
                     p.muutaOhi(nappi.getX(), nappi.getY());
                     nappi.setBackground(Color.BLUE);
                     peli.vaihdaVuoro();
                 } else {
                     System.out.println("Olet jo ampunut tähän ruutuun");
+                    s.oletJoAmpunut();
                 }
             } else {
                 System.out.println("Ei ole sinun vuorosi!");
+                s.eiSinunVuorosi();
             }
         }
 

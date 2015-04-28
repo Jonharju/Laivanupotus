@@ -18,7 +18,7 @@ public class Ampuminen extends JPanel{
     private Pelikentta tokan;
     private AmpumisRuudukko ekanRuudukko;
     private AmpumisRuudukko tokanRuudukko;
-    private JTextArea teksti;
+    private Selostaja s;
 
     public Ampuminen(Peli p) {
         super();
@@ -28,15 +28,16 @@ public class Ampuminen extends JPanel{
         this.toka = p.laivat2;
         this.ekan = p.kentta1;
         this.tokan = p.kentta2;
-        this.ekanRuudukko = new AmpumisRuudukko(p,eka, ekan, 1);
-        this.tokanRuudukko = new AmpumisRuudukko(p,toka, tokan, 2);
-        this.teksti = new JTextArea("Tänne tulee tekstiä");
+        this.s = new Selostaja(p);
+        this.ekanRuudukko = new AmpumisRuudukko(p,eka, ekan, 1, s);
+        this.tokanRuudukko = new AmpumisRuudukko(p,toka, tokan, 2, s);
         luoKomponentit();
     }
     
     private void luoKomponentit() {
         add(ekanRuudukko);
-        add(teksti);
+        add(s);
         add(tokanRuudukko);
     }
+    
 }

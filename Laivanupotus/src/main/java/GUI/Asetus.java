@@ -23,8 +23,8 @@ public class Asetus extends JPanel{
     private Pelikentta tokan;
     private CardLayout kortit;
     private JPanel korttiPaneeli;
-    private JTextArea ekanAsetusTilanne;
-    private JTextArea tokanAsetusTilanne;
+    private Selostaja ekanAsetusTilanne;
+    private Selostaja tokanAsetusTilanne;
     private AsetusRuudukko ekanRuudukko;
     private AsetusRuudukko tokanRuudukko;
 //    
@@ -36,10 +36,10 @@ public class Asetus extends JPanel{
         this.toka = p.laivat2;
         this.ekan = p.kentta1;
         this.tokan = p.kentta2;
-        this.ekanAsetusTilanne = new JTextArea("Pelaaja 1, aseta alukset!");
-        this.tokanAsetusTilanne = new JTextArea("Pelaaja 2, aseteta alukset!");
-        this.ekanRuudukko = new AsetusRuudukko(eka, tokan);
-        this.tokanRuudukko = new AsetusRuudukko(toka, ekan);
+        this.ekanAsetusTilanne = new Selostaja(p);
+        this.tokanAsetusTilanne = new Selostaja(p);
+        this.ekanRuudukko = new AsetusRuudukko(eka, tokan, ekanAsetusTilanne);
+        this.tokanRuudukko = new AsetusRuudukko(toka, ekan, tokanAsetusTilanne);
         this.korttiPaneeli = new JPanel();
         this.kortit = new CardLayout();
         korttiPaneeli.setLayout(kortit);
@@ -93,6 +93,7 @@ public class Asetus extends JPanel{
                 a.setVisible(true);
             } else if (eka.onkoKaikkiAsetettu()) {
                 kortit.next(korttiPaneeli);
+                tokanAsetusTilanne.vaihdaVuoroa(2);
             }
         }
 
