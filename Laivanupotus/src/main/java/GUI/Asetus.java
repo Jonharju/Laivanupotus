@@ -110,7 +110,6 @@ public class Asetus extends JPanel{
                 a.setVisible(true);
             } else if (eka.onkoKaikkiAsetettu()) {
                 kortit.next(korttiPaneeli);
-                tokanAsetusTilanne.vaihdaVuoroa(2);
             }
         }
 

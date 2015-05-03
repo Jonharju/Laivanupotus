@@ -46,20 +46,12 @@ public class AsetusRuudukko extends JPanel{
     
     private void luoPainikkeet() {
         
-        for (int j = 0; j < koko; j++) {
-            
-            
-            for (int i = 0; i < koko; i++) {    
-                
+        for (int j = 0; j < koko; j++) {           
+            for (int i = 0; i < koko; i++) {                   
                 JButton nappula = new JButton();
                 nappula.setEnabled(true);
-
-//                nappula.setBackground(Color.WHITE);
-//                nappula.setEnabled(painettavissa);
-                
                 asetusKuuntelija kuuntelija = new asetusKuuntelija();
                 nappula.addActionListener(kuuntelija);
-                
                 this.add(nappula);
             }
         }
@@ -81,9 +73,8 @@ public class AsetusRuudukko extends JPanel{
      * @param y y-koordinaatti johon laiva halutaan laittaa
      * @param vaaka suunta johon laiva halutaan laittaa
      * 
-     * @return teksti siitä mitä tehdään
      */
-    public String AsetusRuudussa(int x, int y, int vaaka) {
+    public void AsetusRuudussa(int x, int y, int vaaka) {
         if(!l.onkoKaikkiAsetettu()){
             Laiva nyt = l.getLaivat().get(laitettuja);
             if(!l.onkoJoLaiva(x, y, nyt.getKoko(), vaaka)){
@@ -92,18 +83,15 @@ public class AsetusRuudukko extends JPanel{
                     p.asetaLaiva(nyt);
                     laitettuja++;
                     s.asetettu();
-                    return "Laiva asetettu";
                 } else {
                     s.eiVoiAsettaa();
-                    return "Laivaa ei voi asettaa tähän";
                 }
             } else  {
                 s.eiVoiAsettaa();
-                return "Tässä on jo laiva";
             } 
-        }
-        s.kaikkiAsetettu();
-        return "Olet jo asettanut kaikki laivat";
+        } else{
+            s.kaikkiAsetettu();
+        }   
     }
     
     /**
@@ -117,7 +105,6 @@ public class AsetusRuudukko extends JPanel{
          *
          */
         public asetusKuuntelija() {
-         
 
         }
         
@@ -130,8 +117,7 @@ public class AsetusRuudukko extends JPanel{
                 vaaka = 1;
             }
             nappi = (JButton)ae.getSource();
-            System.out.println("suunta " + vaaka+" x "+ nappi.getX()/34+" y "+ (nappi.getY()-4)/41);
-            System.out.println(AsetusRuudussa(nappi.getX()/34, (nappi.getY()-4)/41, vaaka));
+            AsetusRuudussa(nappi.getX()/34, (nappi.getY()-4)/41, vaaka);
         }
 
     }

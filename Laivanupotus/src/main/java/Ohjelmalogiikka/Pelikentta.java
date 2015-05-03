@@ -20,9 +20,11 @@ public class Pelikentta {
      * Asetetaan jokainen kentän ruutu ampumattomaksi
      */
     public void alustaKentta(){
-        for(int rivi=0 ; rivi <= 9 ; rivi++ )
-            for(int sarake=0 ; sarake <= 9 ; sarake++ )
+        for(int rivi=0 ; rivi <= 9 ; rivi++ ){
+            for(int sarake=0 ; sarake <= 9 ; sarake++ ){
                 pelikentta[rivi][sarake]=-1;
+            }
+        }
     }
     
     /**

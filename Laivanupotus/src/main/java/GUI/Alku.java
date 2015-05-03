@@ -45,13 +45,10 @@ public class Alku extends JPanel implements ActionListener {
 
         JLabel nimiTeksti1 = new JLabel("Pelaaja 1: ");
         nimiRuutu1 = new JTextField();
-
         JLabel nimiTeksti2 = new JLabel("Pelaaja 2: ");
         nimiRuutu2 = new JTextField();
-
         aseta1.addActionListener(this);
         aseta2.addActionListener(this);
-
         add(nimiTeksti1);
         add(nimiTeksti2);
         add(nimiRuutu1);

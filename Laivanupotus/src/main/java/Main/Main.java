@@ -1,3 +1,5 @@
+package Main;
+
 
 import Ohjelmalogiikka.Laiva;
 import Ohjelmalogiikka.Peli;

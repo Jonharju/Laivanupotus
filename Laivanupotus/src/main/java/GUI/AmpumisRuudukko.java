@@ -47,18 +47,13 @@ public class AmpumisRuudukko extends JPanel{
         luoPainikkeet();
     }
     
-    private void luoPainikkeet() {
-        
-        for (int j = 0; j < koko; j++) {
-            
-            for (int i = 0; i < koko; i++) {    
-                
+    private void luoPainikkeet() {       
+        for (int j = 0; j < koko; j++) {            
+            for (int i = 0; i < koko; i++) {                  
                 JButton nappula = new JButton();
                 nappula.setEnabled(true);
-
                 ampumisKuuntelija kuuntelija = new ampumisKuuntelija(nappula);
-                nappula.addActionListener(kuuntelija);
-                
+                nappula.addActionListener(kuuntelija);              
                 this.add(nappula);
             }
         }
@@ -100,22 +95,18 @@ public class AmpumisRuudukko extends JPanel{
                         s.osuma();
                         nappi.setEnabled(false);
                         if(l.onkoKaikkiUponnut()){
-                            System.out.println("voitit pelin!");
                             s.voitit();
                         }
                     }  
                 } else if(p.tarkista(x,y) == -1){
-                    System.out.println("Ammuit huti");
                     s.ohi();
                     p.muutaOhi(x,y);
                     nappi.setBackground(Color.BLUE);
                     peli.vaihdaVuoro();
                 } else {
-                    System.out.println("Olet jo ampunut tähän ruutuun");
                     s.oletJoAmpunut();
                 }
             } else {
-                System.out.println("Ei ole sinun vuorosi!");
                 s.eiSinunVuorosi();
             }
         }

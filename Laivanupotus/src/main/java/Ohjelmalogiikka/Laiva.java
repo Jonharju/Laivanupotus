@@ -55,7 +55,7 @@ public class Laiva {
      * @param y käyttäjän antama syöte
      * @param suunta käyttäjän antama syöte
      */
-        public void asetaLaiva(int x, int y, int suunta){
+    public void asetaLaiva(int x, int y, int suunta){
         this.x = x;
         this.y = y;
         this.suunta = suunta;
@@ -80,7 +80,7 @@ public class Laiva {
      * 
      * @return mahtuuko laiva
      */
-        public boolean sopiikoLaiva(int x, int y, int suunta){
+    public boolean sopiikoLaiva(int x, int y, int suunta){
         if(x > 9 || y > 9){
             return false;
         }
@@ -117,10 +117,6 @@ public class Laiva {
     public boolean osuiko(int x, int y) {
         if(onkoLaivaTassa(x, y)){
             osu();
-            System.out.println("Osuit laivaan");
-            if(uponnut()){
-                System.out.println("Upotit laivan!");
-            }
             return true;
         }
         return false;

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.7">
+<file name="C:\Users\Jonas\Laivanupotus\Laivanupotus\src\main\java\GUI\Alku.java">
+<error line="2" column="9" severity="error" message="Nimen &apos;GUI&apos; pitÃ¤Ã¤ olla mallin &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos; mukainen." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+<error line="68" column="11" severity="error" message="&apos;if&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="68" column="40" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="74" column="11" severity="error" message="&apos;if&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="74" column="15" severity="error" message="&apos;&amp;&amp;&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="74" column="17" severity="error" message="&apos;&amp;&amp;&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="74" column="22" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+</file>
+<file name="C:\Users\Jonas\Laivanupotus\Laivanupotus\src\main\java\GUI\Ampuminen.java">
+<error line="2" column="9" severity="error" message="Nimen &apos;GUI&apos; pitÃ¤Ã¤ olla mallin &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos; mukainen." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+<error line="15" column="38" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="38" column="51" severity="error" message="&apos;,&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="39" column="52" severity="error" message="&apos;,&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+</file>
+<file name="C:\Users\Jonas\Laivanupotus\Laivanupotus\src\main\java\GUI\AmpumisRuudukko.java">
+<error line="2" column="9" severity="error" message="Nimen &apos;GUI&apos; pitÃ¤Ã¤ olla mallin &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos; mukainen." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+<error line="22" column="44" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="73" column="18" severity="error" message="Nimen &apos;ampumisKuuntelija&apos; pitÃ¤Ã¤ olla mallin &apos;^[A-Z][a-zA-Z0-9]*$&apos; mukainen." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
+<error line="87" column="33" severity="error" message="&apos;/&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="87" column="34" severity="error" message="&apos;/&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="88" column="34" severity="error" message="&apos;-&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="88" column="35" severity="error" message="&apos;-&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="88" column="37" severity="error" message="&apos;/&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="88" column="38" severity="error" message="&apos;/&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="89" column="44" severity="error" message="&apos;/&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="89" column="45" severity="error" message="&apos;/&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="89" column="47" severity="error" message="&apos;+&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="89" column="68" severity="error" message="&apos;-&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="89" column="69" severity="error" message="&apos;-&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="89" column="71" severity="error" message="&apos;/&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="89" column="72" severity="error" message="&apos;/&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="90" column="15" severity="error" message="&apos;if&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="90" column="46" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="91" column="19" severity="error" message="&apos;if&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="91" column="42" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="92" column="23" severity="error" message="&apos;if&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="92" column="35" severity="error" message="&apos;,&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="92" column="38" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="93" column="39" severity="error" message="&apos;,&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="97" column="27" severity="error" message="&apos;if&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="97" column="50" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="101" column="26" severity="error" message="&apos;if&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="101" column="40" severity="error" message="&apos;,&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="101" column="49" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="103" column="34" severity="error" message="&apos;,&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+</file>
+<file name="C:\Users\Jonas\Laivanupotus\Laivanupotus\src\main\java\GUI\Asetus.java">
+<error line="2" column="9" severity="error" message="Nimen &apos;GUI&apos; pitÃ¤Ã¤ olla mallin &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos; mukainen." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+<error line="21" column="35" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="41" severity="error" message="ctor def modifier sisennyssyvyydellÃ¤ 8 ei ole oikealla syvyydellÃ¤ 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="41" column="44" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="92" column="18" severity="error" message="Nimen &apos;valmisNapinKuuntelija&apos; pitÃ¤Ã¤ olla mallin &apos;^[A-Z][a-zA-Z0-9]*$&apos; mukainen." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
+<error line="108" column="41" severity="error" message="&apos;&amp;&amp;&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+</file>
+<file name="C:\Users\Jonas\Laivanupotus\Laivanupotus\src\main\java\GUI\AsetusRuudukko.java">
+<error line="2" column="9" severity="error" message="Nimen &apos;GUI&apos; pitÃ¤Ã¤ olla mallin &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos; mukainen." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+<error line="22" column="43" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="78" column="17" severity="error" message="Nimen &apos;AsetusRuudussa&apos; pitÃ¤Ã¤ olla mallin &apos;^[a-z][a-zA-Z0-9]*$&apos; mukainen." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="79" column="11" severity="error" message="&apos;if&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="79" column="36" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="81" column="15" severity="error" message="&apos;if&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="81" column="59" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="82" column="19" severity="error" message="&apos;if&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="82" column="50" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="100" column="18" severity="error" message="Nimen &apos;asetusKuuntelija&apos; pitÃ¤Ã¤ olla mallin &apos;^[A-Z][a-zA-Z0-9]*$&apos; mukainen." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
+<error line="119" column="30" severity="error" message="&apos;cast&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="120" column="40" severity="error" message="&apos;/&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="120" column="41" severity="error" message="&apos;/&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="120" column="58" severity="error" message="&apos;-&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="120" column="59" severity="error" message="&apos;-&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="120" column="61" severity="error" message="&apos;/&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="120" column="62" severity="error" message="&apos;/&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+</file>
+<file name="C:\Users\Jonas\Laivanupotus\Laivanupotus\src\main\java\GUI\GraafinenKayttoLiittyma.java">
+<error line="2" column="9" severity="error" message="Nimen &apos;GUI&apos; pitÃ¤Ã¤ olla mallin &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos; mukainen." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+<error line="16" column="57" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+</file>
+<file name="C:\Users\Jonas\Laivanupotus\Laivanupotus\src\main\java\GUI\KoordinaattiNappi.java">
+<error line="2" column="9" severity="error" message="Nimen &apos;GUI&apos; pitÃ¤Ã¤ olla mallin &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos; mukainen." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+<error line="11" column="47" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+</file>
+<file name="C:\Users\Jonas\Laivanupotus\Laivanupotus\src\main\java\GUI\Selostaja.java">
+<error line="2" column="9" severity="error" message="Nimen &apos;GUI&apos; pitÃ¤Ã¤ olla mallin &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos; mukainen." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+<error line="38" column="11" severity="error" message="&apos;if&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="38" column="24" severity="error" message="&apos;)&apos;:ta edeltÃ¤Ã¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"/>
+<error line="38" column="26" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="40" column="33" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="63" severity="error" message="method def child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="70" severity="error" message="method def child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="77" severity="error" message="method def child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+</file>
+<file name="C:\Users\Jonas\Laivanupotus\Laivanupotus\src\main\java\Main\Main.java">
+<error line="1" column="9" severity="error" message="Nimen &apos;Main&apos; pitÃ¤Ã¤ olla mallin &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos; mukainen." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+<error line="12" column="43" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+</file>
+<file name="C:\Users\Jonas\Laivanupotus\Laivanupotus\src\main\java\Ohjelmalogiikka\Laiva.java">
+<error line="2" column="9" severity="error" message="Nimen &apos;Ohjelmalogiikka&apos; pitÃ¤Ã¤ olla mallin &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos; mukainen." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+<error line="58" column="53" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="69" column="34" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="83" column="58" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="84" column="11" severity="error" message="&apos;if&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="84" column="27" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="87" column="11" severity="error" message="&apos;if&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="87" column="24" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="88" column="15" severity="error" message="&apos;if&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="88" column="17" severity="error" message="&apos;+&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="88" column="18" severity="error" message="&apos;+&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="88" column="22" severity="error" message="&apos;-&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="88" column="23" severity="error" message="&apos;-&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="88" column="30" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="91" column="18" severity="error" message="&apos;if&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="92" column="15" severity="error" message="&apos;if&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="92" column="17" severity="error" message="&apos;+&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="92" column="18" severity="error" message="&apos;+&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="92" column="22" severity="error" message="&apos;-&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="92" column="23" severity="error" message="&apos;-&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="92" column="30" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="102" column="22" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="103" column="11" severity="error" message="&apos;if&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="103" column="36" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="118" column="11" severity="error" message="&apos;if&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="118" column="33" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="133" column="48" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="134" column="11" severity="error" message="&apos;if&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="134" column="27" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="135" column="15" severity="error" message="&apos;if&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="136" column="19" severity="error" message="&apos;if&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="136" column="32" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="137" column="24" severity="error" message="&apos;for&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="137" column="50" severity="error" message="&apos;;&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="137" column="54" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="138" column="27" severity="error" message="&apos;if&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="138" column="44" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="143" column="22" severity="error" message="&apos;if&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="143" column="40" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="144" column="19" severity="error" message="&apos;if&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="144" column="32" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="145" column="24" severity="error" message="&apos;for&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="145" column="50" severity="error" message="&apos;;&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="145" column="54" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="146" column="27" severity="error" message="&apos;if&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="146" column="44" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="161" column="29" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="162" severity="error" message="method def child at indentation level 7 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+</file>
+<file name="C:\Users\Jonas\Laivanupotus\Laivanupotus\src\main\java\Ohjelmalogiikka\Laivasto.java">
+<error line="2" column="9" severity="error" message="Nimen &apos;Ohjelmalogiikka&apos; pitÃ¤Ã¤ olla mallin &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos; mukainen." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+<error line="22" column="47" severity="error" message="&apos;{&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="22" column="47" severity="error" message="&apos;}&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="45" column="67" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="46" column="12" severity="error" message="&apos;for&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="46" column="38" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="47" column="16" severity="error" message="&apos;for&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="47" column="34" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="48" column="19" severity="error" message="&apos;if&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="48" column="32" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="49" column="23" severity="error" message="&apos;if&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="49" column="45" severity="error" message="&apos;+&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="49" column="46" severity="error" message="&apos;+&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="49" column="49" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="52" column="26" severity="error" message="&apos;if&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="53" column="23" severity="error" message="&apos;if&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="53" column="42" severity="error" message="&apos;+&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="53" column="43" severity="error" message="&apos;+&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="53" column="49" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="68" column="39" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="69" column="12" severity="error" message="&apos;for&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="69" column="30" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="70" column="15" severity="error" message="&apos;if&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="70" column="29" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="85" column="40" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="86" column="12" severity="error" message="&apos;for&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="86" column="30" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="87" column="15" severity="error" message="&apos;if&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="87" column="31" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="98" column="40" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="99" column="12" severity="error" message="&apos;for&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="99" column="30" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="100" column="15" severity="error" message="&apos;if&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="100" column="34" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+</file>
+<file name="C:\Users\Jonas\Laivanupotus\Laivanupotus\src\main\java\Ohjelmalogiikka\Peli.java">
+<error line="2" column="9" severity="error" message="Nimen &apos;Ohjelmalogiikka&apos; pitÃ¤Ã¤ olla mallin &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos; mukainen." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+<error line="61" column="30" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="71" column="11" severity="error" message="&apos;if&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="71" column="22" severity="error" message="&apos;%&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="71" column="23" severity="error" message="&apos;%&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="71" column="30" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="84" column="34" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="85" column="11" severity="error" message="&apos;if&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="85" column="73" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+</file>
+<file name="C:\Users\Jonas\Laivanupotus\Laivanupotus\src\main\java\Ohjelmalogiikka\Pelikentta.java">
+<error line="2" column="9" severity="error" message="Nimen &apos;Ohjelmalogiikka&apos; pitÃ¤Ã¤ olla mallin &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos; mukainen." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+<error line="22" column="31" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="23" column="12" severity="error" message="&apos;for&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="23" column="21" severity="error" message="&apos;=&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="23" column="22" severity="error" message="&apos;=&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="23" column="23" severity="error" message="&apos;;&apos;:ta edeltÃ¤Ã¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="23" column="35" severity="error" message="&apos;;&apos;:ta edeltÃ¤Ã¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="23" column="44" severity="error" message="&apos;)&apos;:ta edeltÃ¤Ã¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"/>
+<error line="23" column="46" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="24" column="16" severity="error" message="&apos;for&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="24" column="27" severity="error" message="&apos;=&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="24" column="28" severity="error" message="&apos;=&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="24" column="29" severity="error" message="&apos;;&apos;:ta edeltÃ¤Ã¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="24" column="43" severity="error" message="&apos;;&apos;:ta edeltÃ¤Ã¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="24" column="54" severity="error" message="&apos;)&apos;:ta edeltÃ¤Ã¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"/>
+<error line="24" column="56" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="25" column="41" severity="error" message="&apos;=&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="25" column="42" severity="error" message="&apos;=&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="38" column="38" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="49" column="25" severity="error" message="&apos;=&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="49" column="26" severity="error" message="&apos;=&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="58" column="44" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="59" column="25" severity="error" message="&apos;=&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="59" column="26" severity="error" message="&apos;=&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="68" column="40" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="69" column="25" severity="error" message="&apos;=&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="69" column="26" severity="error" message="&apos;=&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="76" column="36" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="77" column="11" severity="error" message="&apos;if&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="78" column="16" severity="error" message="&apos;for&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="78" column="44" severity="error" message="&apos;;&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="78" column="48" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="79" column="51" severity="error" message="&apos;+&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="81" column="18" severity="error" message="&apos;if&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="81" column="38" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="82" column="16" severity="error" message="&apos;for&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="82" column="49" severity="error" message="&apos;{&apos;:ta ei edellÃ¤ vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="83" column="41" severity="error" message="&apos;+&apos;:ta ei seuraa vÃ¤lilyÃ¶nti." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+</file>
+</checkstyle>
