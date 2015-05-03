@@ -6,12 +6,12 @@ package Ohjelmalogiikka;
  * @author Jonas
  */
 public class Laiva {
-    int x;
-    int y;
-    int suunta;
-    int koko;
-    int osumia;
-    boolean asetettu;
+    private int x;
+    private int y;
+    private int suunta;
+    private int koko;
+    private int osumia;
+    private boolean asetettu;
 
     /**
      * Alustetaan muuttujat, -1 jos ei vielä laitettu, kooksi koko ja osumia 0
@@ -25,6 +25,26 @@ public class Laiva {
         this.koko = koko;
         this.osumia = 0;
         this.asetettu = false;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public int getSuunta() {
+        return suunta;
+    }
+
+    public int getOsumia() {
+        return osumia;
+    }
+
+    public boolean isAsetettu() {
+        return asetettu;
     }
 
 
@@ -42,6 +62,10 @@ public class Laiva {
         this.asetettu = true;
     }
         
+    /**
+     *
+     * @return onko laiva jo asetettu
+     */
     public boolean onkoAsetettu(){
         return this.asetettu;
     }
@@ -142,6 +166,10 @@ public class Laiva {
        return this.osumia == this.koko;
     }
 
+    /**
+     *
+     * @return laivan koko
+     */
     public int getKoko() {
         return koko;
     }

@@ -7,18 +7,39 @@ package Ohjelmalogiikka;
  */
 public class Peli {
 
+    /**
+     *  ensimmäisen pelaajan pelikenttä
+     */
     public Pelikentta kentta1;
 
+    /**
+     * toisen pelaajan pelikenttä
+     */
     public Pelikentta kentta2;
 
+    /**
+     * ensimmäisen pelaajan laivasto
+     */
     public Laivasto laivat1;
 
+    /**
+     * toisen pelaajan laivasto
+     */
     public Laivasto laivat2;
 
+    /**
+     * ensimmäisen pelaajan nimi
+     */
     public String nimi1;
 
+    /**
+     * toisen pelaajan nimi
+     */
     public String nimi2;
 
+    /**
+     * vuoron numero
+     */
     public int vuoro;
 
     /**

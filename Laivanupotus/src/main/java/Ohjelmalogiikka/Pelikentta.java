@@ -67,14 +67,18 @@ public class Pelikentta {
         pelikentta[x][y]=1;
     }
     
+    /**
+     * muutta ruudut, joihin laiva on asetettu, pelikentällä myöskin vastaamaan laivaa 
+     * @param l  annettu laiva
+     */
     public void asetaLaiva(Laiva l){
-        if(l.suunta == 0) {
-            for(int i = 0; i < l.koko;i++){
-                muutaLaivaksi(l.x, l.y +i);   
+        if(l.getSuunta() == 0) {
+            for(int i = 0; i < l.getKoko();i++){
+                muutaLaivaksi(l.getX(), l.getY() +i);   
             }
-        } else if(l.suunta == 1){
-            for(int i = 0; i < l.koko; i++){
-                muutaLaivaksi(l.x +i, l.y);
+        } else if(l.getSuunta() == 1){
+            for(int i = 0; i < l.getKoko(); i++){
+                muutaLaivaksi(l.getX() +i, l.getY());
             }
         }
     }

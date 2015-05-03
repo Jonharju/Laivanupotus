@@ -9,6 +9,10 @@ import java.awt.event.ActionListener;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+/**
+ *
+ * @author Jonas
+ */
 public class Alku extends JPanel implements ActionListener {
     private Peli p;
     private Asetus a;
@@ -21,7 +25,11 @@ public class Alku extends JPanel implements ActionListener {
     private JTextField nimiRuutu1;
     private JTextField nimiRuutu2;
     
-    
+    /**
+     * luodaan uusi alku näkymä
+     * @param p peli, jota näkymä kuvaa ja muokkaa
+     * @param a asetusnäkymä, jota tullaan kutsumaan täältä
+     */
     public Alku(Peli p, Asetus a) {
         super(new GridLayout(3, 2));
         this.p = p;
@@ -69,7 +77,6 @@ public class Alku extends JPanel implements ActionListener {
         if(eka&&toka){
             this.setVisible(false);
             a.setVisible(true);
-            a.repaint();
         }
     }
 }

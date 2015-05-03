@@ -95,7 +95,7 @@ public class LaivaTest {
         assertEquals(true, laiva.osuiko(3, 1));
         assertEquals(true, laiva.uponnut());
         laiva.osu();
-        assertEquals(3, laiva.osumia);
+        assertEquals(3, laiva.getOsumia());
     }
     
     @Test

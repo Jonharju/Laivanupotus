@@ -14,6 +14,10 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
+/**
+ *
+ * @author Jonas
+ */
 public class Asetus extends JPanel{
     private Peli p;
     private Ampuminen a;
@@ -28,7 +32,13 @@ public class Asetus extends JPanel{
     private AsetusRuudukko ekanRuudukko;
     private AsetusRuudukko tokanRuudukko;
 //    
-    public  Asetus(Peli p, Ampuminen a){
+
+    /**
+     * luo uuden asetus näkymän
+     * @param p pelinäkymä, jota muokataan ja esitetään
+     * @param a ampumisnäkymä, jota tullaan kutsumaan täältä
+     */
+        public  Asetus(Peli p, Ampuminen a){
         super(new BorderLayout());
         this.a = a;
         this.p = p;
@@ -76,10 +86,17 @@ public class Asetus extends JPanel{
         return korttiPaneeli;
     }
  
+    /**
+     *
+     */
     public class valmisNapinKuuntelija implements ActionListener {
 
         JPanel tama;
 
+        /**
+         *
+         * @param tama
+         */
         public valmisNapinKuuntelija(JPanel tama) {
             this.tama = tama;
 

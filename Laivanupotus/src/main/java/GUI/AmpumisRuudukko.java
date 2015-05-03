@@ -15,7 +15,10 @@ import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
-
+/**
+ *
+ * @author Jonas
+ */
 public class AmpumisRuudukko extends JPanel{
     private final int koko = 10;
     private Laivasto l;
@@ -24,6 +27,16 @@ public class AmpumisRuudukko extends JPanel{
     private int pelaaja;
     private Selostaja s;
 
+    /**
+     * luodaan uusi ampumisruudukko, joka koostuu koordinaattinappeista, joita 
+     * pelaaja klickaa kun haluaa ampua jotain tiettyä ruutua
+     * 
+     * @param peli peli joka on käynnissä
+     * @param l laivasto, joka sijaitsee tällä kentällä
+     * @param p kenttä, johon pelaaja ampuu
+     * @param pelaaja pelaaja, joka ampuu
+     * @param s selostaja, joka kuvaa kyseistä peliä
+     */
     public AmpumisRuudukko(Peli peli, Laivasto l, Pelikentta p, int pelaaja, Selostaja s) {
         this.peli = peli;
         this.l = l;
@@ -38,52 +51,63 @@ public class AmpumisRuudukko extends JPanel{
         
         for (int j = 0; j < koko; j++) {
             
-            JPanel rivi = new JPanel(new GridLayout(1, koko));
-            
             for (int i = 0; i < koko; i++) {    
                 
-                KoordinaattiNappi nappula = new KoordinaattiNappi(i,j);
+                JButton nappula = new JButton();
                 nappula.setEnabled(true);
 
                 ampumisKuuntelija kuuntelija = new ampumisKuuntelija(nappula);
                 nappula.addActionListener(kuuntelija);
                 
-                rivi.add(nappula);
+                this.add(nappula);
             }
-            this.add(rivi);
         }
     }
     
-    
+    /**
+     * palauta kentän koko
+     * @return koko
+     */
     public int getKoko() {
         return this.koko;
     }
     
+    /**
+     * metodi joka reagoi pelin tapahtumiin niiden mukaisesti
+     */
     public class ampumisKuuntelija implements ActionListener {
 
-        private KoordinaattiNappi nappi;
+        private JButton nappi;
 
-        public ampumisKuuntelija(KoordinaattiNappi nappi) {
+        /**
+         *
+         * @param nappi
+         */
+        public ampumisKuuntelija(JButton nappi) {
             this.nappi = nappi;
         }
         
         @Override
         public void actionPerformed(ActionEvent ae) {
+            int x = nappi.getX()/34;
+            int y = (nappi.getY()-2)/44;
+            System.out.println(nappi.getX()/34+ " " + (nappi.getY()-2)/44);
             if(pelaaja == peli.kummanVuoro()){
-                if(p.tarkista(nappi.getX(), nappi.getY()) == 2){  
-                    if(l.osuiko(nappi.getX(), nappi.getY())){
-                        p.muutaOsui(nappi.getX(), nappi.getY());
+                if(p.tarkista(x, y) == 2){  
+                    if(l.osuiko(x,y)){
+                        p.muutaOsui(x,y);
                         nappi.setBackground(Color.RED);
                         s.osuma();
+                        nappi.setEnabled(false);
                         if(l.onkoKaikkiUponnut()){
                             System.out.println("voitit pelin!");
                             s.voitit();
                         }
                     }  
-                } else if(p.tarkista(nappi.getX(), nappi.getY()) == -1){
+                } else if(p.tarkista(x,y) == -1){
                     System.out.println("Ammuit huti");
                     s.ohi();
-                    p.muutaOhi(nappi.getX(), nappi.getY());
+                    p.muutaOhi(x,y);
                     nappi.setBackground(Color.BLUE);
                     peli.vaihdaVuoro();
                 } else {

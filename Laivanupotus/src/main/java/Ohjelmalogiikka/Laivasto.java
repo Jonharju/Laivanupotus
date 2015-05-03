@@ -11,9 +11,9 @@ import java.util.List;
 public class Laivasto {
 
     /**
-     *
+     *  lista laivaston laivoista
      */
-    public List<Laiva> laivat;
+    private List<Laiva> laivat;
 
     /**
      *
@@ -27,12 +27,18 @@ public class Laivasto {
         laivat.add(new Laiva(2));
         laivat.add(new Laiva(1));
     }
+
+    public List<Laiva> getLaivat() {
+        return laivat;
+    }
     
     /**
      * Käydään laiva kerrallaan läpi onko ruudussa laiva
      * 
      * @param x käyttäjän antama syöte
      * @param y käyttäjän antama syöte
+     * @param koko annettu koko 
+     * @param suunta annettu suunta
      * 
      * @return onko laivaston laiva tässä ruudussa
      */
@@ -85,6 +91,10 @@ public class Laivasto {
         return false;
     }
     
+    /**
+     * Tarkista yksi laiva kerrallaan ovatko kaikki laivat jo asetettu 
+     * @return onko kaikki laivat jo asetettu
+     */
     public boolean onkoKaikkiAsetettu(){
         for(Laiva l : laivat){
             if(!l.onkoAsetettu()){

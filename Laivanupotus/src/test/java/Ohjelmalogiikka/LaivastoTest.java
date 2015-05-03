@@ -33,7 +33,7 @@ public class LaivastoTest {
     @Test
     public void luoLaivat(){
         Laivasto l = new Laivasto();
-        assertEquals(6, l.laivat.size());
+        assertEquals(6, l.getLaivat().size());
     }
     
     @Test
@@ -45,8 +45,8 @@ public class LaivastoTest {
     @Test
     public void upottaaLaivat(){
         Laivasto l = new Laivasto();
-        for(Laiva laiva: l.laivat){
-            for(int i = 0; i<laiva.koko; i++){
+        for(Laiva laiva: l.getLaivat()){
+            for(int i = 0; i<laiva.getKoko(); i++){
                 laiva.osu();
             }
         }
@@ -57,7 +57,7 @@ public class LaivastoTest {
     public void osuuLaivoihin(){
         Laivasto l = new Laivasto();
         int i = 1;
-        for(Laiva laiva: l.laivat){
+        for(Laiva laiva: l.getLaivat()){
             laiva.asetaLaiva(i, i, 1);
             i++;
         }

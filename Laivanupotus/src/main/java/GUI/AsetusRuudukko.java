@@ -15,6 +15,10 @@ import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
+/**
+ *
+ * @author Jonas
+ */
 public class AsetusRuudukko extends JPanel{
     private final int koko = 10;
     private Laivasto l;
@@ -22,6 +26,14 @@ public class AsetusRuudukko extends JPanel{
     private int laitettuja;
     private Selostaja s;
 
+    /**
+     * luodaan ruudukko joka koostuu koordinaattinapeista, joka asettaa laivaston
+     * laivat käyttäjän haluamiin paikkoihin
+     * 
+     * @param l pelaavan pelaajan laivaston
+     * @param p pelaaja, joka asettaa laivaston
+     * @param s selostja, joka selostaa tätä peliä
+     */
     public AsetusRuudukko(Laivasto l, Pelikentta p, Selostaja s) {
         this.l = l;
         this.p = p;
@@ -36,11 +48,10 @@ public class AsetusRuudukko extends JPanel{
         
         for (int j = 0; j < koko; j++) {
             
-            JPanel rivi = new JPanel(new GridLayout(1, koko));
             
             for (int i = 0; i < koko; i++) {    
                 
-                KoordinaattiNappi nappula = new KoordinaattiNappi(i,j);
+                JButton nappula = new JButton();
                 nappula.setEnabled(true);
 
 //                nappula.setBackground(Color.WHITE);
@@ -49,20 +60,32 @@ public class AsetusRuudukko extends JPanel{
                 asetusKuuntelija kuuntelija = new asetusKuuntelija();
                 nappula.addActionListener(kuuntelija);
                 
-                rivi.add(nappula);
+                this.add(nappula);
             }
-            this.add(rivi);
         }
     }
     
-    
+    /**
+     * palauttaa koon
+     * @return koko
+     */
     public int getKoko() {
         return this.koko;
     }
     
+    /**
+     * tarkistaa voiko laivan laittaa tähän ja palauttaa selostajalle tapahtuman 
+     * kulun. Jos voi asettaa laivan, muuten ei aseta ja palauttaa tiedon tästä
+     * 
+     * @param x x-koordinaatti johon laiva halutaan laittaa
+     * @param y y-koordinaatti johon laiva halutaan laittaa
+     * @param vaaka suunta johon laiva halutaan laittaa
+     * 
+     * @return teksti siitä mitä tehdään
+     */
     public String AsetusRuudussa(int x, int y, int vaaka) {
         if(!l.onkoKaikkiAsetettu()){
-            Laiva nyt = l.laivat.get(laitettuja);
+            Laiva nyt = l.getLaivat().get(laitettuja);
             if(!l.onkoJoLaiva(x, y, nyt.getKoko(), vaaka)){
                 if(nyt.sopiikoLaiva(x, y, vaaka)){
                     nyt.asetaLaiva(x, y, vaaka);
@@ -70,20 +93,29 @@ public class AsetusRuudukko extends JPanel{
                     laitettuja++;
                     s.asetettu();
                     return "Laiva asetettu";
-                } 
-            } else {
+                } else {
+                    s.eiVoiAsettaa();
+                    return "Laivaa ei voi asettaa tähän";
+                }
+            } else  {
                 s.eiVoiAsettaa();
-                return "Laivaa ei voi asettaa tähän";
+                return "Tässä on jo laiva";
             } 
         }
         s.kaikkiAsetettu();
         return "Olet jo asettanut kaikki laivat";
     }
     
+    /**
+     * kuuntelija, joka reagoi pelin tapahtumien mukaan
+     */
     public class asetusKuuntelija implements ActionListener {
         private int vaaka;
-        private KoordinaattiNappi nappi;
+        private JButton nappi;
 
+        /**
+         *
+         */
         public asetusKuuntelija() {
          
 
@@ -97,9 +129,9 @@ public class AsetusRuudukko extends JPanel{
             } else {
                 vaaka = 1;
             }
-            nappi = (KoordinaattiNappi)ae.getSource();
-            System.out.println("suunta " + vaaka+" x "+ nappi.getX()+" y "+ nappi.getY());
-            System.out.println(AsetusRuudussa(nappi.getX(), nappi.getY(), vaaka));
+            nappi = (JButton)ae.getSource();
+            System.out.println("suunta " + vaaka+" x "+ nappi.getX()/34+" y "+ (nappi.getY()-4)/41);
+            System.out.println(AsetusRuudussa(nappi.getX()/34, (nappi.getY()-4)/41, vaaka));
         }
 
     }

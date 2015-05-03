@@ -15,3 +15,7 @@
 | 25.4.2015 | 4h | Graafisen jatkokehittelyä |
 | 26.4.2015 | 3h | Graafisen jatkoa ja luokkien muuntelua toiminnan mukaisiksi |
 | 27.4.2015 | 12h | Graafisen käyttöliittymän kehitys, bugien korjaus ja toiminallisuuden toteutus vihdoin lähellä haluttua |
+| 28.4.2015 | 5h | Graafisen muokkailua |
+| 30.4.2015 | 3h | Dokumenttien kirjoittelua ja graafisen muokkailua |
+| 02.5.2015 | 5h | Dokumenttien kirjoittelua ja graafisen muokkailua |
+| 03.5.2015 | 8h | Suurimman bugin liiskaus, pientä päivittelyä ja viimeistelyä |
